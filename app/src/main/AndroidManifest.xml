@@ -11,6 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BooksApp">
+<<<<<<< HEAD
+=======
+        <activity android:name=".ui.detail.DetailActivity"></activity>
+>>>>>>> --allow-empty-message
         <activity android:name=".ui.books.BooksActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
