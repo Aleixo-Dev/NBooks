@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.nicolas.booksapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,10 +12,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BooksApp">
-<<<<<<< HEAD
-=======
-        <activity android:name=".ui.detail.DetailActivity"></activity>
->>>>>>> --allow-empty-message
         <activity android:name=".ui.books.BooksActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.detail.BooksDetailsActivity"
+            android:parentActivityName=".ui.books.BooksActivity"
+            tools:ignore="DuplicateActivity" />
     </application>
 
 </manifest>
